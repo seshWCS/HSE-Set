@@ -125,6 +125,8 @@ private:
         } else if (root->val < v) {
             root->r = insert(root->r, v);
             root->r->pr = root;
+        } else {
+            return root;
         }
         updLR(root);
         updh(root);
