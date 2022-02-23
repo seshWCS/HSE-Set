@@ -194,13 +194,6 @@ private:
         if (nd->r != nullptr) {
             destruct_node(nd->r);
         }
-        if (nd->pr != nullptr) {
-            if (nd->val < nd->pr->val) {
-                nd->pr->l = nullptr;
-            } else {
-                nd->pr->r = nullptr;
-            }
-        }
         nd->L = nullptr;
         nd->R = nullptr;
         nd->l = nullptr;
